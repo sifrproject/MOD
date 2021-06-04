@@ -321,8 +321,8 @@ owl:ontologyIRI  a rdf:Property ;
             	rdfs:label 	"IRI identifier"@en ,
           						"identifiant IRI"@fr .
 
-### http://www.w3.org/2002/07/owl#VersionIRI
-owl:VersionIRI a rdf:Property ;
+### http://www.w3.org/2002/07/owl#versionIRI
+owl:versionIRI a rdf:Property ;
                rdfs:domain 		mod:Ontology ;
                rdfs:range 		xsd:anyURI ;
                dct:description "The property that identifies the version IRI of an ontology."@en ;
@@ -346,8 +346,8 @@ dct:identifier a rdf:Property ;
           						"Autre identifiant"@fr .
 
 
-### http://www.w3.org/2002/07/owl#VersionInfo
-owl:VersionInfo a rdf:Property ;
+### http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo a rdf:Property ;
                 rdfs:domain 	mod:Ontology ;
                 rdfs:range 		xsd:string ;
                 dct:description "The version of the released ontology."@en ;
@@ -377,8 +377,8 @@ omv:status a rdf:Property ;
            rdfs:label 		"status"@en ,
           					"statut"@fr .
 
-### http://www.w3.org/2002/07/owl#Deprecated
-owl:Deprecated a rdf:Property ;
+### http://www.w3.org/2002/07/owl#deprecated
+owl:deprecated a rdf:Property ;
                rdfs:domain 		mod:Ontology ;
                rdfs:range 		xsd:boolean ;
                dct:description "An annotation with the owl:deprecated annotation property and the value equal to \"true\"^^xsd:boolean can be used to specify that an IRI is deprecated."@en ;
@@ -560,8 +560,8 @@ omv:resourceLocator a rdf:Property ;
           						"URL de téléchargement"@fr .
 
 
-### http://www.w3.org/2000/01/rdf-schema#Comment
-rdfs:Comment a rdf:Property ;
+### http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment a rdf:Property ;
              rdfs:domain 	mod:Ontology ;
              rdfs:range 		xsd:string ;
              dct:description "Is used to provide a human-readable description of a resource."@en ;
@@ -1091,8 +1091,8 @@ owl:imports a rdf:Property ;
           				"importe"@fr .
 
 
-### http://www.w3.org/2002/07/owl#PriorVersion
-owl:PriorVersion a rdf:Property ;
+### http://www.w3.org/2002/07/owl#priorVersion
+owl:priorVersion a rdf:Property ;
                  rdfs:domain 	mod:Ontology ;
                  rdfs:range 		xsd:anyURI ;
                  dct:description "This identifies the specified ontology as a prior version of the containing ontology."@en ;
@@ -1108,8 +1108,8 @@ owl:PriorVersion a rdf:Property ;
           						"version précédente"@fr .
 
 
-### http://www.w3.org/2002/07/owl#BackwardCompatibleWith
-owl:BackwardCompatibleWith a rdf:Property ;
+### http://www.w3.org/2002/07/owl#backwardCompatibleWith
+owl:backwardCompatibleWith a rdf:Property ;
                            rdfs:domain 	mod:Ontology ;
                            rdfs:range 		mod:Ontology ;
                            dct:description "This identifies the specified ontology as a prior version of the containing ontology, and further indicates that it is backward compatible with it."@en ;
@@ -1122,8 +1122,8 @@ owl:BackwardCompatibleWith a rdf:Property ;
           								"rétrocompatible"@fr .
 
 
-### http://www.w3.org/2002/07/owl#IncompatibleWith
-owl:IncompatibleWith a rdf:Property ;
+### http://www.w3.org/2002/07/owl#incompatibleWith
+owl:incompatibleWith a rdf:Property ;
                      rdfs:domain 	mod:Ontology ;
                      rdfs:range 		mod:Ontology ;
                      dct:description "This indicates that the containing ontology is a later version of the referenced ontology, but is not backward compatible with it."@en ;
